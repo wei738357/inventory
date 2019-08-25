@@ -5,18 +5,18 @@
 <body>
 <form name="commentform" method="post" action="save-file.php">
 <p>
-Ö÷»ú/IP: <input type="text" name="thehost" />
+ä¸»æœº/IP: <input type="text" name="thehost" />
 </p>
 <p>
-ÓÃ»§Ãû: <input type="text" name="theuser" />
+ç”¨æˆ·å: <input type="text" name="theuser" />
 </p>
 <p>
-ÃÜ¡¡Âë: <input type="text" name="thepwd" />
+å¯†ã€€ç : <input type="text" name="thepwd" />
 </p>
 <p>
-Êý¾Ý¿â: <input type="text" name="thedbname" />
+æ•°æ®åº“: <input type="text" name="thedbname" />
 </p>
-<input type="submit" value="Ìá ½»" />
+<input type="submit" value="æ äº¤" />
 </form>
 </body>
 </html>
