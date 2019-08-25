@@ -1,14 +1,17 @@
 <?php
 
 	$myfile = fopen("config.ini", "w") or die("Unable to open file!");
-	$txt = $_POST["host"]+"\n";
+	$txt = $_REQUEST["host"]+"\n";
+	echo $txt;
 	fwrite($myfile, $txt);
-	$txt = $_POST["user"]+"\n";
+	$txt = $_REQUEST["user"]+"\n";
+	echo $txt;
 	fwrite($myfile, $txt);
-	$txt = $_POST["pwd"]+"\n";
+	$txt = $_REQUEST["pwd"]+"\n";
+	echo $txt;
 	fwrite($myfile, $txt);
-	$txt = $_POST["dbname"]+"\n";
+	$txt = $_REQUEST["dbname"]+"\n";
+	echo $txt;
 	fwrite($myfile, $txt);
 	fclose($myfile);
-
 ?>
