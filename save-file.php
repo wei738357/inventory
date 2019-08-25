@@ -1,10 +1,13 @@
 <?php
 
-	$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-	$txt = "Mickey Mouse\n";
+	$myfile = fopen("config.ini", "w") or die("Unable to open file!");
+	$txt = $_POST["host"]+"\n";
 	fwrite($myfile, $txt);
-	$txt = "Minnie Mouse\n";
+	$txt = $_POST["user"]+"\n";
+	fwrite($myfile, $txt);
+	$txt = $_POST["pwd"]+"\n";
+	fwrite($myfile, $txt);
+	$txt = $_POST["dbname"]+"\n";
 	fwrite($myfile, $txt);
 	fclose($myfile);
-
 ?>

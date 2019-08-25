@@ -1,0 +1,19 @@
+<html>
+<body>
+<form name="commentform" method="post" action="save-file.php">
+<p>
+主机/IP: <input type="text" name="nickname" />
+</p>
+<p>
+用户名: <input type="text" name="nickname" />
+</p>
+<p>
+密　码: <input type="text" name="nickname" />
+</p>
+<p>
+数据库: <input type="text" name="nickname" />
+</p>
+<input type="submit" value="提 交" />
+</form>
+</body>
+</html>
