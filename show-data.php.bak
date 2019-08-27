@@ -30,6 +30,8 @@
 		fclose($myfile);
 	} 
 
+	echo($ip."\n".$user."\n".$pwd."\n".$db);
+
     $con=mysqli_connect($ip,$user,$pwd);
     
     if(!$con){
