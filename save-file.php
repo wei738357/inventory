@@ -12,5 +12,5 @@
 
 	fclose($myfile);
 
-	header('Location: show-data.php');
+	header('Location: /');
 ?>

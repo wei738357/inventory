@@ -33,9 +33,9 @@
     $con=mysqli_connect($ip,$user,$pwd);
     
     if(!$con){
-    die('数据库连接失败！');
+      echo "<h5>数据库连接失败！<h5>";
     }else{
-    echo "数据库连接成功！";
+      echo "数据库连接成功！";
     }
 
    mysqli_select_db($con,$db);

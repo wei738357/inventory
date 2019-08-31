@@ -5,7 +5,7 @@
 <body>
 <form name="commentform" method="post" action="save-file.php">
 <p>
-主机/IP: <input type="text" name="thehost" />
+主机/IP: <input type="text" name="thehost" style="width:70%" />
 </p>
 <p>
 用户名: <input type="text" name="theuser" />
