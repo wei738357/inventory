@@ -1,5 +1,5 @@
 <?php
-	$myfile = fopen("config.ini", "w") or die("Unable to open file!");
+	$myfile = fopen("config", "w") or die("Unable to open file!");
 
 	$txt = $_POST["thehost"]."\n";
 	fwrite($myfile, $txt);

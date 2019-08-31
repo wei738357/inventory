@@ -9,7 +9,7 @@
 	$pwd="";
 	$db="";
 
-	if($myfile = fopen("config.ini", "r"))
+	if($myfile = fopen("config", "r"))
 	{
 		if(!feof($myfile))
 		{
