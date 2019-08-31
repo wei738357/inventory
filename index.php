@@ -4,7 +4,7 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 ?><!DOCTYPE html>
 <html>
   <head>
-    <title>¿â´æÏµÍ³</title>
+    <title>Inventory System</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
 
