@@ -8,29 +8,8 @@
 	  $user="";
 	  $pwd="";
 	  $db="";
-    /*
-	  if($myfile = fopen("config", "r"))
-	  {
-		    if(!feof($myfile))
-		    {
-			    $ip = trim(fgets($myfile, 255));//从文件指针中读取第一行
-		    }
-		    if(!feof($myfile))
-		    {
-			    $user = trim(fgets($myfile, 255));//从文件指针中读取第二行
-		    }
-		    if(!feof($myfile))
-		    {
-			    $pwd = trim(fgets($myfile, 255));//从文件指针中读取第三行
-		    }
-		    if(!feof($myfile))
-		    {
-			    $db = trim(fgets($myfile, 255));//从文件指针中读取第四行
-		    }
-		    fclose($myfile);
-	  } 
-    */
     
+    session_start();
     $ip=$_SESSION['thehost'];
     $user=$_SESSION['theuser'];
     $pwd=$_SESSION['thepwd'];
