@@ -5,7 +5,7 @@
    $user=$_POST["theuser"];
    $pwd=$_POST["thepwd"];
    $db=$_POST["thedbname"];
-   $tab="inventory".uniqid();
+   $tab="invtable".uniqid();
   
   session_start();
   $_SESSION['thehost']=$ip;
