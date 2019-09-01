@@ -7,12 +7,12 @@
    $db=$_POST["thedbname"];
    $tab="invtable".uniqid();
   
-  session_start();
-  $_SESSION['thehost']=$ip;
-  $_SESSION['theuser']=$user;
-  $_SESSION['thepwd']=$pwd;
-  $_SESSION['thedbname']=$db;
-  $_SESSION['thetab']=$tab;
+    session_start();
+    $_SESSION['thehost']=$ip;
+    $_SESSION['theuser']=$user;
+    $_SESSION['thepwd']=$pwd;
+    $_SESSION['thedbname']=$db;
+    $_SESSION['thetab']=$tab;
   
 
     $con=mysqli_connect($ip,$user,$pwd);
