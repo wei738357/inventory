@@ -8,12 +8,14 @@
 	  $user="";
 	  $pwd="";
 	  $db="";
+    $tab="";
     
     session_start();
     $ip=$_SESSION['thehost'];
     $user=$_SESSION['theuser'];
     $pwd=$_SESSION['thepwd'];
     $db=$_SESSION['thedbname'];
+    $tab=$_SESSION['thetab'];
 
     $con=mysqli_connect($ip,$user,$pwd);
     
@@ -25,7 +27,7 @@
 
    mysqli_select_db($con,$db);
    mysqli_query($con,"SET NAMES utf8");//解决数据库中有汉字时显示在前台出现乱码问题
-   $result = mysqli_query($con,"SELECT * FROM inventory");
+   $result = mysqli_query($con,"SELECT * FROM ".$tab);
 
     echo "<table border='1'>
         <tr>
@@ -44,8 +46,8 @@
         echo "<td>" . $row['quantity'] . "</td>";
         echo "</tr>";
     }
-        echo "</table>";
+    echo "</table>";
 
-    mysqli_close($con);          // 关闭 MySQL 连接。
+    mysqli_close($con);          //关闭MySQL连接
   
 ?>
