@@ -1,5 +1,7 @@
 #!/bin/bash 
-yum install -y httpd mysql 
+yum install -y httpd mariadb-server
 amazon-linux-extras install -y php7.2  
 chkconfig httpd on
-service httpd start
+chkconfig mariadb on
+systemctl start  httpd
+systemctl start mariadb
