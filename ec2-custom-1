@@ -1,0 +1,5 @@
+#!/bin/bash 
+yum install -y httpd mysql 
+amazon-linux-extras install -y php7.2  
+chkconfig httpd on
+service httpd start
